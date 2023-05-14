@@ -1,6 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        double amount = 1_008.06;
-        System.out.println(amount);
+        int counter = 10;
+        counter++;
+        System.out.println(counter++);
+        System.out.println(counter);
     }
 }
