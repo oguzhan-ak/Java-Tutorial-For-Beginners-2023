@@ -1,9 +1,9 @@
-import java.util.Locale;
+import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
-        String amigos = "Amigos";
-        String code = "Code";
-        System.out.println((amigos + code).toLowerCase(Locale.GERMANY));
+        Point pointA = new Point(10, 10);
+        pointA.move(12, 12);
+        System.out.println(pointA);
     }
 }
