@@ -1,7 +1,9 @@
+import java.util.Locale;
+
 public class Main {
     public static void main(String[] args) {
-        int a = 19;
-        int b = 10;
-        System.out.println(a != b);
+        String amigos = "Amigos";
+        String code = "Code";
+        System.out.println((amigos + code).toLowerCase(Locale.GERMANY));
     }
 }
