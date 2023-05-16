@@ -4,17 +4,13 @@ public class Main {
     public static void main(String[] args) {
         // Arrays
         int[] numbers = new int[3];
-        numbers[0] = 12;
-        numbers[1] = 22;
-        numbers[2] = 32;
+        Arrays.fill(numbers, 2);
         System.out.println(Arrays.toString(numbers));
-        for (int number : numbers) {
-            System.out.println(number);
-        }
-        System.out.println(numbers.length);
 
-        double[] numbers2 = {2, 3, 4, 5, 6};
-        numbers2[3] = 3;
-        System.out.println(Arrays.toString(numbers2));
+        String[] names = new String[2];
+        names[0] = "Ali";
+        System.out.println(Arrays.toString(names));
+        Arrays.fill(names, "Ayşe");
+        System.out.println(Arrays.toString(names));
     }
 }
