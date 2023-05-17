@@ -1,12 +1,26 @@
 public class Main {
-
-    private static int add(int numberOne, int numberTwo) {
-        return numberOne + numberTwo;
+    public static void main(String[] args) {
+        Cat cat = new Cat("Duman");
+        cat.meow();
     }
 
-    public static void main(String[] args) {
+    static class Cat {
+        String name;
 
-        //Method Call
-        System.out.println(add(23, 45));
+        public Cat(String name) {
+            this.name = name;
+        }
+
+        void meow() {
+            System.out.println(name + " : meow..");
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
     }
 }
